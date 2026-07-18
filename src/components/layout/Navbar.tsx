@@ -4,6 +4,8 @@ import { useState, useEffect } from "react";
 import { motion, useScroll, useMotionValueEvent } from "framer-motion";
 import { Button } from "@/components/ui/Button";
 
+import Image from "next/image";
+
 export function Navbar() {
   const { scrollY } = useScroll();
   const [scrolled, setScrolled] = useState(false);
@@ -22,10 +24,9 @@ export function Navbar() {
     >
       <div className="container mx-auto px-6 md:px-12 flex items-center justify-between">
         <div className="flex-shrink-0">
-          <h1 className={`font-semibold tracking-widest uppercase transition-colors duration-300 ${scrolled ? "text-[#1A1A1A] text-xl" : "text-white text-2xl"
-            }`}>
-            Cipriani <span className="font-light">Tower</span>
-          </h1>
+          <span className={`text-xl md:text-2xl font-bold uppercase tracking-widest transition-colors ${scrolled ? "text-[#2C4C3B]" : "text-white"}`}>
+            GRAND PIECE
+          </span>
         </div>
 
         <div>
@@ -34,7 +35,7 @@ export function Navbar() {
             size="sm"
             className={!scrolled ? "text-white border-white hover:bg-white hover:text-black" : ""}
           >
-            Agendar Visita
+            Agendar visita
           </Button>
         </div>
       </div>

@@ -14,12 +14,14 @@ import "swiper/css/effect-fade";
 
 export function Gallery() {
   const images = [
-    { src: "/images/imagem-fachada.png", alt: "Fachada", className: "scale-[1.25] origin-top" },
-    { src: "/images/SALÃO DE FESTAS 3.jpg", alt: "Salão de Festas" },
-    { src: "/images/SALÃO DE FESTAS.jpg", alt: "Salão de Festas" },
-    { src: "/images/BRINQUEDOTECA 2.jpg", alt: "Brinquedoteca" },
-    { src: "/images/PISCINA_NOTURNA_NOVA.jpg", alt: "Piscina Noturna" },
-    { src: "/images/ACADEMIA_NOVA.jpg", alt: "Academia" }
+    { src: "/images/fachada.jpg", alt: "Fachada" },
+    { src: "/images/externa-diurna.jpg", alt: "Vista Externa" },
+    { src: "/images/living.jpg", alt: "Living Integrado" },
+    { src: "/images/suite.jpg", alt: "Suíte" },
+    { src: "/images/sacada.jpg", alt: "Sacada" },
+    { src: "/images/salao-de-festas.jpg", alt: "Salão de Festas" },
+    { src: "/images/piscina-diurna.jpg", alt: "Piscina" },
+    { src: "/images/academia.jpg", alt: "Academia" }
   ];
 
   return (
@@ -31,7 +33,7 @@ export function Gallery() {
           viewport={{ once: true }}
           className="text-4xl md:text-5xl font-medium text-gray-900 mb-6"
         >
-          Conheça cada detalhe do Cipriani Tower
+          Conheça cada detalhe do Grand Piece
         </motion.h2>
         <motion.p
           initial={{ opacity: 0, y: 20 }}
@@ -40,7 +42,7 @@ export function Gallery() {
           transition={{ delay: 0.1 }}
           className="text-gray-500 font-sans text-lg max-w-2xl mx-auto"
         >
-          Fachada, áreas comuns e ambientes — uma prévia do padrão que você vai encontrar na sua visita.
+          Fachada, áreas comuns e ambientes do apartamento modelo — uma prévia do padrão que você vai encontrar na sua visita.
         </motion.p>
       </div>
 
@@ -76,7 +78,7 @@ export function Gallery() {
                     alt={img.alt}
                     fill
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 75vw, 40vw"
-                    className={`object-cover ${img.className || ""}`}
+                    className="object-cover"
                   />
                   {isActive && (
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-end p-8">
@@ -91,7 +93,7 @@ export function Gallery() {
 
         <style jsx global>{`
           .gallery-swiper .swiper-pagination-bullet {
-            background: #C4A57A;
+            background: #2C4C3B;
             opacity: 0.5;
           }
           .gallery-swiper .swiper-pagination-bullet-active {
@@ -131,7 +133,7 @@ export function Gallery() {
 
       <div className="text-center mt-12">
         <Button size="lg" variant="primary">
-          Agendar Visita
+          Agendar visita
         </Button>
       </div>
     </section>

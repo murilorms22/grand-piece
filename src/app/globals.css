@@ -3,8 +3,8 @@
 @theme {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --color-premium-gold: #C4A57A;
-  --color-premium-gold-hover: #B39366;
+  --color-premium-gold: #2C4C3B;
+  --color-premium-gold-hover: #3D6B53;
   --color-premium-dark: #1A1A1A;
   --color-premium-light: #F9F9F9;
 }
@@ -25,22 +25,24 @@
 
 @layer base {
   :root {
-    --gold-brand: #C4A57A;
-    --gold-dark: #A3855E;
+    --gold-brand: #2C4C3B;
+    --gold-dark: #1A2F24;
   }
-  
-  html, body {
+
+  html,
+  body {
     scroll-behavior: smooth;
     cursor: default;
   }
 
   /* Mudando a cor do texto selecionado para o dourado da marca */
   ::selection {
-    background-color: var(--gold-brand);
+    background-color: #2C4C3B;
     color: #ffffff;
   }
+
   ::-moz-selection {
-    background-color: var(--gold-brand);
+    background-color: #2C4C3B;
     color: #ffffff;
   }
 }
@@ -49,18 +51,19 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-sans), Arial, Helvetica, sans-serif;
-  overflow-x: hidden; /* Previne scroll horizontal em animações */
+  overflow-x: hidden;
+  /* Previne scroll horizontal em animações */
 }
 
 @layer utilities {
   .radius-mix-1 {
     border-radius: 0 40px 0 40px;
   }
-  
+
   .radius-mix-2 {
     border-radius: 40px 0 40px 0;
   }
-  
+
   .glassmorphism {
     background: rgba(255, 255, 255, 0.7);
     backdrop-filter: blur(12px);

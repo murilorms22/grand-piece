@@ -2,29 +2,29 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { HeartPulse, BookOpen, Coffee, ShoppingBag, MapPin } from "lucide-react";
+import { Waves, Compass, Store, Car, MapPin } from "lucide-react";
 
 export function Location() {
   const points = [
     {
-      icon: <HeartPulse className="w-5 h-5" />,
+      icon: <Store className="w-5 h-5" />,
+      title: "Compras",
+      desc: "Shopping Park Europeu e Norte Shopping"
+    },
+    {
+      icon: <Waves className="w-5 h-5" />,
       title: "Saúde",
-      desc: "Hospital Unimed e Hospital Santa Isabel"
+      desc: "Hospital Santo Antônio, Hospital Dia do Pulmão e unidades Unimed na região"
     },
     {
-      icon: <BookOpen className="w-5 h-5" />,
-      title: "Educação",
-      desc: "FURB (Universidade Regional de Blumenau) e UFSC (Universidade Federal de Santa Catarina)"
+      icon: <Compass className="w-5 h-5" />,
+      title: "Educação e serviços",
+      desc: "Escolas da região, supermercados, padarias, farmácias e academias no entorno"
     },
     {
-      icon: <Coffee className="w-5 h-5" />,
-      title: "Lazer e Cultura",
-      desc: "Parque Vila Germânica (Oktoberfest), Parque Ramiro e Teatro Carlos Gomes"
-    },
-    {
-      icon: <ShoppingBag className="w-5 h-5" />,
-      title: "Compras e Serviços",
-      desc: "Shopping Neumarkt, Angeloni Supermercado, Sam’s Club e Terminal Proeb (transporte público)"
+      icon: <Car className="w-5 h-5" />,
+      title: "Mobilidade",
+      desc: "Fácil acesso à BR-470 e ao Centro de Blumenau"
     }
   ];
 
@@ -42,18 +42,18 @@ export function Location() {
             transition={{ duration: 0.8 }}
             className="order-2 lg:order-1"
           >
-            <div className="flex items-center gap-3 text-[#C4A57A] mb-4 font-medium tracking-wide text-sm uppercase">
+            <div className="flex items-center gap-3 text-[#2C4C3B] mb-4 font-medium tracking-wide text-sm uppercase">
               <MapPin className="w-5 h-5" />
               <span>Localização</span>
             </div>
             <h2 className="text-4xl md:text-5xl font-medium text-gray-900 mb-6 leading-tight">
-              No bairro Velha,<br /> perto de tudo o que importa
+              Em Itoupava Seca, com tudo por perto
             </h2>
-            <p className="text-gray-500 font-sans text-lg mb-6 max-w-lg">
-              O Cipriani Tower fica na Rua Marechal Deodoro, 527, no bairro Velha — uma das regiões mais valorizadas de Blumenau, com fácil acesso ao centro, comércio, escolas e serviços.
+            <p className="text-gray-500 font-sans text-lg mb-6 max-w-lg font-medium leading-relaxed">
+              O Grand Piece fica na Rua Iguape, 149, no bairro Itoupava Seca — uma das regiões que mais crescem em Blumenau, com fácil acesso a shoppings, comércio, serviços e às principais vias da cidade.
             </p>
-            <p className="text-gray-600 font-sans font-medium mb-10 max-w-lg">
-              Estar no bairro Velha significa viver a poucos minutos dos principais pontos de Blumenau:
+            <p className="text-gray-600 font-sans font-semibold mb-10 max-w-lg">
+              Morar no Grand Piece é viver a poucos minutos dos principais pontos de Blumenau:
             </p>
 
             <div className="space-y-8 relative">
@@ -62,7 +62,7 @@ export function Location() {
 
               {points.map((point, idx) => (
                 <div key={idx} className="flex items-start gap-6 relative z-10 group">
-                  <div className="w-12 h-12 rounded-full bg-white border border-gray-200 flex items-center justify-center text-gray-900 shadow-sm group-hover:border-[#C4A57A] group-hover:text-[#C4A57A] transition-colors shrink-0">
+                  <div className="w-12 h-12 rounded-full bg-white border border-gray-200 flex items-center justify-center text-gray-900 shadow-sm group-hover:border-[#2C4C3B] group-hover:text-[#2C4C3B] transition-colors shrink-0">
                     {point.icon}
                   </div>
                   <div className="pt-2">
@@ -86,8 +86,8 @@ export function Location() {
           >
             <div className="relative aspect-[4/5] w-full max-w-md mx-auto lg:max-w-none radius-mix-2 overflow-hidden shadow-xl">
               <Image
-                src="/images/vista externa quadra gpt.png"
-                alt="Localização Cipriani Tower"
+                src="/images/externa-diurna.jpg"
+                alt="Localização Costa Dourada"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 className="object-cover"
