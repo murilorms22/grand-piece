@@ -19,7 +19,7 @@ export function Hero() {
           alt="Grand Piece Residencial Fachada"
           fill
           quality={100}
-          className="object-cover object-left-top"
+          className="object-cover object-[65%_top] md:object-left-top"
           priority
           loading="eager"
         />
