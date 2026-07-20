@@ -37,7 +37,7 @@ export function Hero() {
           className="max-w-3xl flex flex-col space-y-6 pt-28 md:pt-32 lg:scale-[0.75] 2xl:scale-100 lg:origin-left"
         >
           <h1 className="text-4xl md:text-5xl lg:text-[4.2rem] font-bold text-white leading-[1.1] tracking-tight">
-            Seu novo endereço em Blumenau: <span className="text-[#51b369] drop-shadow-[0_0_15px_rgba(62,216,135,0.4)]">studios, 2 dormitórios e gardens</span> <br />de alto padrão
+            Seu novo endereço em Blumenau: <span className="text-[#3ad160] drop-shadow-[0_0_15px_rgba(62,216,135,0.4)]">studios, 2 dormitórios e gardens</span> <br />de alto padrão
           </h1>
 
           {/* Features Grid */}
