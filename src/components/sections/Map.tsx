@@ -23,8 +23,12 @@ export function Map() {
 
       </div>
 
-      <div className="w-full h-[300px] md:h-[350px] mt-12">
+      <div className="w-full h-[300px] md:h-[350px] mt-12 relative flex items-center justify-center">
+        <p className="absolute text-white text-sm md:text-base z-0 text-center px-4">
+          Caso o mapa não esteja aparecendo aqui, recarregue a página para visualizá-lo.
+        </p>
         <iframe
+          className="relative z-10"
           src="https://maps.google.com/maps?q=Rua%20Iguape,%20149%20-%20Itoupava%20Seca,%20Blumenau%20-%20SC&t=&z=15&ie=UTF8&iwloc=&output=embed"
           width="100%"
           height="100%"
