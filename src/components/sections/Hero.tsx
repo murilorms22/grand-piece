@@ -36,9 +36,8 @@ export function Hero() {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="max-w-3xl flex flex-col space-y-6 pt-28 md:pt-32 lg:scale-[0.75] 2xl:scale-100 lg:origin-left"
         >
-          {/* Title */}
           <h1 className="text-4xl md:text-5xl lg:text-[4.2rem] font-bold text-white leading-[1.1] tracking-tight">
-            Seu novo endereço em Blumenau: <span className="bg-[#2f905e] bg-clip-text text-transparent">studios, 2 dormitórios e gardens</span> <br />de alto padrão
+            Seu novo endereço em Blumenau: <span className="text-[#51b369] drop-shadow-[0_0_15px_rgba(62,216,135,0.4)]">studios, 2 dormitórios e gardens</span> <br />de alto padrão
           </h1>
 
           {/* Features Grid */}
@@ -59,7 +58,7 @@ export function Hero() {
                 <div className="flex-shrink-0 text-white">
                   <item.icon className="w-5 h-5 md:w-6 md:h-6" strokeWidth={2} />
                 </div>
-                <div className="h-8 w-[2px] bg-[#2C4C3B] rounded-full" />
+                <div className="h-8 w-[2px] bg-[#3ace5f] rounded-full" />
                 <span className="text-white font-bold text-xs md:text-sm leading-tight">
                   {item.text}
                 </span>
