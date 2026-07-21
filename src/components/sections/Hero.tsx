@@ -3,7 +3,7 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { Button } from "@/components/ui/Button";
 import Image from "next/image";
-import { Car, Sparkles, MapPin, Key, Calendar } from "lucide-react";
+import { Car, Sparkles, MapPin, Key, Calendar, DollarSign } from "lucide-react";
 
 export function Hero() {
   const { scrollY } = useScroll();
@@ -46,14 +46,14 @@ export function Hero() {
               { text: "Studios, 2 dormitórios (1 suíte) e opção garden", icon: Key },
               { text: "De 32 a 74 m², com vaga dupla nos 2 dormitórios", icon: Car },
               { text: "Lazer completo: piscina, quadra, academia e mais", icon: Sparkles },
-              { text: "Localização em Itoupava Seca, perto de shoppings e serviços", icon: MapPin }
+              { text: "Unidades a partir de R$721.000,00", icon: DollarSign, isPrice: true }
             ].map((item, idx) => (
               <motion.div
                 key={idx}
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.6, delay: 0.4 + (idx * 0.1) }}
-                className="flex items-center space-x-4 bg-black/40 backdrop-blur-md p-4 rounded-xl border border-white/10"
+                className={`flex items-center space-x-4 bg-black/40 backdrop-blur-md p-4 rounded-xl border ${item.isPrice ? 'border-[#3ace5f]' : 'border-white/10'}`}
               >
                 <div className="flex-shrink-0 text-white">
                   <item.icon className="w-5 h-5 md:w-6 md:h-6" strokeWidth={2} />

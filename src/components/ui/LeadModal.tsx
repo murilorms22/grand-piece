@@ -97,7 +97,7 @@ export function LeadModal() {
                     placeholder="Seu nome"
                   />
                 </div>
-                
+
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div>
                     <label className="block text-sm font-medium text-gray-700 mb-1">
@@ -154,7 +154,7 @@ export function LeadModal() {
               </form>
             </div>
           </motion.div>
-          
+
           {/* Overlay Escuro com Animação para o Redirecionamento (Fica por cima de tudo) */}
           <AnimatePresence>
             {showOverlay && (
