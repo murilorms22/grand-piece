@@ -17,7 +17,7 @@ export function Map() {
           </h2>
           <p className="text-gray-500 font-sans text-lg font-medium">
             Rua Iguape, 149<br />
-            bairro Itoupava Seca — Blumenau/SC
+            na Itoupava Seca — Blumenau/SC
           </p>
         </div>
 

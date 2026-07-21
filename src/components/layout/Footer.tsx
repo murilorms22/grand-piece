@@ -12,7 +12,7 @@ export function Footer() {
             </div>
             <p className="text-gray-400 font-sans">
               Rua Iguape, 149<br />
-              bairro Itoupava Seca — Blumenau/SC
+              na Itoupava Seca — Blumenau/SC
             </p>
           </div>
 

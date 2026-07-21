@@ -23,13 +23,13 @@ export function FloorPlans() {
     {
       title: "Studio",
       area: "32,57 m²",
-      features: ["Ambientes integrados e funcionais", "1 vaga de garagem"],
+      features: ["Ambientes integrados e funcionais", "1 vaga de garagem simples"],
       img: "/images/ap3257.png"
     },
     {
       title: "2 dormitórios (1 suíte)",
       area: "71,54 m²",
-      features: ["2 dormitórios, sendo 1 suíte", "1 vaga de garagem dupla", "Sacada"],
+      features: ["2 dormitórios, sendo 1 suíte", "1 vaga de garagem dupla", "Sacada integrada"],
       img: "/images/ap7154.png"
     },
     {

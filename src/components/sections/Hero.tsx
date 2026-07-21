@@ -44,7 +44,7 @@ export function Hero() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4 w-full">
             {[
               { text: "Studios, 2 dormitórios (1 suíte) e opção garden", icon: Key },
-              { text: "De 32 a 74 m², com vaga dupla nos 2 dormitórios", icon: Car },
+              { text: "De 32 a 74 m², vaga dupla para 2 dormitórios e vaga simples para studios", icon: Car },
               { text: "Lazer completo: piscina, quadra, academia e mais", icon: Sparkles },
               { text: "Unidades a partir de R$721.000,00", icon: DollarSign, isPrice: true }
             ].map((item, idx) => (

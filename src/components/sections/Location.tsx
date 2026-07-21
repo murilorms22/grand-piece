@@ -9,17 +9,17 @@ export function Location() {
     {
       icon: <Store className="w-5 h-5" />,
       title: "Compras",
-      desc: "Shopping Park Europeu e Norte Shopping"
+      desc: "Shopping Park Europeu"
     },
     {
       icon: <Waves className="w-5 h-5" />,
       title: "Saúde",
-      desc: "Hospital Santo Antônio, Hospital Dia do Pulmão e unidades Unimed na região"
+      desc: "Hospital Dia do Pulmão, Hospital UNIMED"
     },
     {
       icon: <Compass className="w-5 h-5" />,
       title: "Educação e serviços",
-      desc: "Escolas da região, supermercados, padarias, farmácias e academias no entorno"
+      desc: "Ao lado da FURB, Giassi, Padaria Benkendorf"
     },
     {
       icon: <Car className="w-5 h-5" />,
@@ -47,10 +47,10 @@ export function Location() {
               <span>Localização</span>
             </div>
             <h2 className="text-4xl md:text-5xl font-medium text-gray-900 mb-6 leading-tight">
-              Em Itoupava Seca, com tudo por perto
+              Na Itoupava Seca, com tudo por perto
             </h2>
             <p className="text-gray-500 font-sans text-lg mb-6 max-w-lg font-medium leading-relaxed">
-              O Grand Piece fica na Rua Iguape, 149, no bairro Itoupava Seca — uma das regiões que mais crescem em Blumenau, com fácil acesso a shoppings, comércio, serviços e às principais vias da cidade.
+              O Grand Piece fica na Rua Iguape, 149, na Itoupava Seca — uma das regiões que mais crescem em Blumenau, com fácil acesso a shoppings, comércio, serviços e às principais vias da cidade.
             </p>
             <p className="text-gray-600 font-sans font-semibold mb-10 max-w-lg">
               Morar no Grand Piece é viver a poucos minutos dos principais pontos de Blumenau:

@@ -83,7 +83,7 @@ export function Amenities() {
               <li className="flex items-center"><span className="w-1.5 h-1.5 rounded-full bg-[#2C4C3B] mr-3 shrink-0" />Opções para morar ou investir: studios, 2 dormitórios e gardens</li>
               <li className="flex items-center"><span className="w-1.5 h-1.5 rounded-full bg-[#2C4C3B] mr-3 shrink-0" />Vaga de garagem dupla nos apartamentos de 2 dormitórios</li>
               <li className="flex items-center"><span className="w-1.5 h-1.5 rounded-full bg-[#2C4C3B] mr-3 shrink-0" />Torre de 27 andares, com vista para a cidade</li>
-              <li className="flex items-center"><span className="w-1.5 h-1.5 rounded-full bg-[#2C4C3B] mr-3 shrink-0" />Localização valorizada em Itoupava Seca</li>
+              <li className="flex items-center"><span className="w-1.5 h-1.5 rounded-full bg-[#2C4C3B] mr-3 shrink-0" />Localização valorizada na Itoupava Seca</li>
               <li className="flex items-center"><span className="w-1.5 h-1.5 rounded-full bg-[#2C4C3B] mr-3 shrink-0" />Negociação direta com a construtora</li>
             </ul>
           </motion.div>
