@@ -10,7 +10,7 @@ export function Hero() {
   const y = useTransform(scrollY, [0, 1000], [0, 300]);
 
   return (
-    <section className="relative h-screen min-h-[650px] w-full flex items-center overflow-hidden bg-[#1A1A1A]">
+    <section className="relative min-h-[100dvh] w-full flex items-center overflow-hidden bg-[#1A1A1A] pb-12 md:pb-0">
 
       {/* Full Background Image */}
       <motion.div className="absolute inset-0 z-0 scale-[1.04] origin-left" style={{ y }}>
